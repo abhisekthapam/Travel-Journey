@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*{
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.link{
+  text-decoration: none;
+  color: rgb(70, 182, 182);
+  font-size: small;
 }
 
-@keyframes App-logo-spin {
+
+.Navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60px;
+  margin-top: 1rem;
+
+}
+.Earth{
+margin:2rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Earth {
+    animation: Earth-spin infinite 110s linear;
+
+  }
+}
+
+
+@keyframes Earth-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+
+
+
+
+.place {
+  height: 200px;
+  width: 280px;
+}
+
+
+.Places {
+  margin: 2rem;
+  display: flex;
+}
+
+
+p {
+  margin: 0;
+  margin-left: 1rem;
+
+}
+.p1{
+  margin-top: 1rem;
+  margin-left: 1rem;
+
+
+}
+
+.detail {
+  margin: 0;
+  align-items: left;
+  margin-left: 1rem;
+  transition: 0.1 ease;
 }
